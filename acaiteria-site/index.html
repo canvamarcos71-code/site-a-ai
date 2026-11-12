@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a50050">
+  <meta name="description" content="Monte seu açaí favorito, descubra combos e faça seu pedido pelo WhatsApp.">
+  <meta property="og:title" content="Açaíê — Seu momento mais gostoso">
+  <meta property="og:description" content="Combos, promoções e açaí do seu jeito.">
+  <meta property="og:type" content="website">
+  <title>Açaíê — Seu momento mais gostoso</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a class="brand" href="#topo" aria-label="Açaíê, página inicial">
+        <span class="brand-mark" aria-hidden="true">açaí<span>ê</span></span>
+        <span class="brand-tag">felicidade no copo</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#combos">Combos</a>
+        <a href="#promocoes">Promoções</a>
+        <a href="#monte">Monte seu açaí</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="button button-yellow nav-order" data-open-cart>Fazer pedido <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-video-layer" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=1600&q=80">
+          <source src="assets/hero-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-glow glow-one" aria-hidden="true"></div>
+      <div class="hero-glow glow-two" aria-hidden="true"></div>
+      <span class="fruit fruit-one" aria-hidden="true">✦</span>
+      <span class="fruit fruit-two" aria-hidden="true">✺</span>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> energia boa em cada colherada</p>
+          <h1 id="heroTitle">JÁ TOMOU SEU AÇAÍ <em>HOJE?</em></h1>
+          <p class="hero-lead">Seu momento mais gostoso começa aqui.</p>
+          <p class="hero-description">Escolha seus acompanhamentos favoritos e transforme qualquer pausa em um dia mais feliz.</p>
+          <div class="hero-actions">
+            <button class="button button-yellow" data-open-cart>Fazer meu pedido <span aria-hidden="true">↗</span></button>
+            <a class="button button-outline" href="#combos">Conhecer os combos</a>
+          </div>
+          <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span><span>Seu açaí, do seu jeito.</span></div>
+        </div>
+        <div class="hero-art reveal" aria-label="Copos de açaí com frutas">
+          <div class="hero-circle"></div>
+          <div class="hero-sticker">feito<br>com amor <span>♥</span></div>
+          <img class="hero-cup cup-back" src="img/imagem1.jpg" alt="Açaí servido em um copo com frutas" fetchpriority="high">
+          <img class="hero-cup cup-front" src="img/imagem2.jpg" alt="Tigela de açaí com frutas frescas" fetchpriority="high">
+          <div class="hero-fruit fruit-berry" aria-hidden="true">●</div>
+          <div class="hero-fruit fruit-spark" aria-hidden="true">✦</div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>CREMOSO</span><i></i><span>REFRESCANTE</span><i></i><span>DO SEU JEITO</span></div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Diferenciais">
+      <div class="container benefit-grid">
+        <div><span class="benefit-icon">✦</span><span><strong>Seu jeito, suas escolhas</strong><small>Monte a combinação ideal</small></span></div>
+        <div><span class="benefit-icon">♡</span><span><strong>Feito com carinho</strong><small>Um momento só seu</small></span></div>
+        <div><span class="benefit-icon">☀</span><span><strong>Combina com seu dia</strong><small>Uma pausa cheia de sabor</small></span></div>
+      </div>
+    </section>
+
+    <section class="section combos-section" id="combos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow eyebrow-dark">escolhas que dão água na boca</p><h2>NOSSOS <span>COMBOS</span></h2></div>
+          <p>Seu açaí favorito, do seu jeito.<br>Escolha um combo e bora ser feliz.</p>
+        </div>
+        <div class="product-grid" id="comboGrid">
+          <!-- Os cards são montados pelo JavaScript a partir do catálogo de demonstração. -->
+        </div>
+        <p class="demo-note">* Produtos e preços demonstrativos. Personalize o catálogo antes de publicar.</p>
+      </div>
+    </section>
+
+    <section class="promo-section" id="promocoes">
+      <div class="container">
+        <div class="section-heading section-heading-light reveal">
+          <div><p class="eyebrow">um convite difícil de recusar</p><h2>PAUSA PRA <span>UM AÇAÍ?</span></h2></div>
+          <p>Seu próximo momento favorito<br>pode começar agora.</p>
+        </div>
+        <div class="promo-grid">
+          <article class="promo-card promo-card-large reveal">
+            <img src="img/imagem3.jpg" alt="Copo de açaí com frutas" loading="lazy">
+            <div class="promo-content"><span class="promo-label">PRA CHAMAR DE SEU</span><h3>Seu açaí favorito<br>com preço especial!</h3><p>Escolha um combo e personalize com seus toppings preferidos.</p><button class="button button-yellow" data-add-product="combo-classico">Quero esse <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="promo-card promo-card-small reveal">
+            <img src="img/barca.jpg" alt="Tigela de açaí para compartilhar" loading="lazy">
+            <div class="promo-content"><span class="promo-label">BOM É DIVIDIR</span><h3>Barca de açaí<br>pra compartilhar.</h3><p>Mais colheradas, mais alegria.</p><button class="button button-yellow" data-add-product="barca-familia">Pedir barca <span aria-hidden="true">↗</span></button></div>
+          </article>
+        </div>
+        <div class="promo-callout reveal"><span class="callout-spark">✳</span><p>Hmmm... nesse calor, o que mais combina?</p><a href="#monte" class="text-link">Monte o seu açaí <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section builder-section" id="monte">
+      <div class="container builder-layout">
+        <div class="builder-intro reveal">
+          <p class="eyebrow eyebrow-dark">a combinação é sua</p>
+          <h2>MONTE SEU <span>AÇAÍ</span></h2>
+          <p>Do tamanho à última cobertura: você escolhe cada detalhe do seu copo perfeito.</p>
+          <div class="builder-image-wrap"><img src="img/imagem5.jpg" alt="Açaí cremoso com acompanhamentos" loading="lazy"></div>
+          <div class="builder-tip"><span>✦</span><span><strong>Dica deliciosa</strong><small>Combine frutas com algo crocante para uma experiência completa.</small></span></div>
+        </div>
+        <div class="builder-panel reveal">
+          <div class="builder-step"><span class="step-number">01</span><div><h3>Escolha o tamanho</h3><p>Quanto maior, mais felicidade.</p></div></div>
+          <div class="size-options" id="sizeOptions">
+            <button class="size-option" data-size="300" aria-pressed="true"><strong>300 ml</strong><small>Pequeno</small><b>R$ 12,00</b></button>
+            <button class="size-option" data-size="500" aria-pressed="false"><strong>500 ml</strong><small>Médio</small><b>R$ 17,00</b></button>
+            <button class="size-option" data-size="700" aria-pressed="false"><strong>700 ml</strong><small>Grande</small><b>R$ 22,00</b></button>
+          </div>
+          <div class="builder-step step-toppings"><span class="step-number">02</span><div><h3>Escolha seus complementos</h3><p>Adicione seus favoritos.</p></div></div>
+          <div class="topping-grid" id="toppingGrid"></div>
+          <label class="field-label" for="builderNotes">Alguma observação? <span>(opcional)</span></label>
+          <textarea id="builderNotes" rows="2" maxlength="240" placeholder="Ex.: pouco leite condensado, por favor..."></textarea>
+          <div class="builder-total"><div><small>Total do seu açaí</small><strong id="builderTotal">R$ 12,00</strong></div><button class="button button-yellow" id="addCustom">Adicionar ao pedido <span aria-hidden="true">+</span></button></div>
+          <p class="demo-note">* Valores de exemplo para personalização.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="container about-layout">
+        <div class="about-photo reveal"><img src="img/imagem4.jpg" alt="Açaí servido com frutas frescas" loading="lazy"><span class="about-stamp">feito pra<br>te fazer sorrir <b>♥</b></span></div>
+        <div class="about-copy reveal"><p class="eyebrow eyebrow-dark">um carinho em forma de açaí</p><h2>MAIS QUE AÇAÍ,<br>UMA <span>EXPERIÊNCIA.</span></h2><p>Cada copo é preparado para transformar seu dia em um momento mais gostoso. Escolha seus acompanhamentos favoritos e aproveite cada colherada.</p><div class="about-points"><div><span>01</span><p><strong>Ingredientes selecionados</strong><small>Mais sabor em cada combinação.</small></p></div><div><span>02</span><p><strong>Combinações para todos</strong><small>Do clássico ao mais criativo.</small></p></div><div><span>03</span><p><strong>Preparado com carinho</strong><small>Porque os detalhes fazem diferença.</small></p></div></div></div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="avaliacoes">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow eyebrow-dark">palavras que aquecem o coração</p><h2>QUEM PROVA, <span>GOSTA!</span></h2></div><p>Esses comentários são apenas exemplos<br>visuais para você substituir depois.</p></div>
+        <div class="reviews-grid">
+          <article class="review-card reveal"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“A combinação ficou do jeitinho que eu gosto. Amei a ideia de montar meu próprio copo!”</p><div class="review-person"><span>MA</span><div><strong>Marcos.</strong><small>Avaliação demonstrativa</small></div></div></article>
+          <article class="review-card reveal"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Açaí com banana e granola é meu favorito. Já quero experimentar outras combinações.”</p><div class="review-person"><span>JL</span><div><strong>João L.</strong><small>Avaliação demonstrativa</small></div></div></article>
+          <article class="review-card reveal"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Uma pausa gostosa no meio do dia. O melhor é poder escolher os acompanhamentos.”</p><div class="review-person"><span>BC</span><div><strong>Filipe.</strong><small>Avaliação demonstrativa</small></div></div></article>
+        </div>
+        <p class="demo-note">Avaliações fictícias para demonstração — não representam clientes reais.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#topo"><span class="brand-mark">açaí<span>ê</span></span><span class="brand-tag">felicidade no copo</span></a><p>Seu momento mais gostoso começa aqui. Escolha, monte e aproveite!</p></div>
+      <div><h3>Explore</h3><a href="#combos">Combos</a><a href="#promocoes">Promoções</a><a href="#monte">Monte seu açaí</a><a href="#sobre">Nossa história</a></div>
+      <div><h3>Fale com a gente</h3><p id="footerAddress">Endereço a configurar</p><p id="footerHours">Horário a configurar</p><a id="footerWhatsapp" href="#contato">WhatsApp: configurar</a><a id="footerInstagram" href="#contato">Instagram: configurar</a></div>
+      <div class="footer-cta"><span class="footer-heart">♥</span><h3>Bateu a vontade?</h3><p>Seu açaí tá a poucos cliques de distância.</p><button class="button button-yellow" data-open-cart>Fazer pedido <span aria-hidden="true">↗</span></button></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> Açaíê. Todos os direitos reservados.</span><span>Feito com carinho, colherada por colherada.</span></div></div>
+  </footer>
+
+  <button class="floating-cart" id="floatingCart" data-open-cart aria-label="Abrir carrinho"><span aria-hidden="true">🛍</span><b id="cartCount">0</b></button>
+  <a class="whatsapp-float" id="whatsappFloat" href="#contato" aria-label="Fale com a loja pelo WhatsApp" title="WhatsApp">☏</a>
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow eyebrow-dark">seu pedido</p><h2 id="cartTitle">Carrinho <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty"><span>♡</span><h3>Seu carrinho está vazio</h3><p>Escolha um combo ou monte seu açaí favorito.</p><button class="button button-yellow" id="browseProducts">Ver produtos</button></div></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div><div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><button class="button button-yellow checkout-open" id="checkoutOpen" disabled>Finalizar pedido <span aria-hidden="true">↗</span></button><small>O pedido será enviado para confirmação pelo WhatsApp.</small></div>
+    <form class="checkout-form" id="checkoutForm" hidden>
+      <div class="checkout-head"><button type="button" class="back-checkout" id="backCheckout">← Voltar ao carrinho</button><h3>Finalizar pedido</h3><p>Preencha os dados para montar sua mensagem.</p></div>
+      <label class="field-label" for="customerName">Seu nome</label><input id="customerName" name="customerName" required maxlength="80" autocomplete="name" placeholder="Como podemos te chamar?">
+      <fieldset><legend>Como prefere receber?</legend><label class="radio-line"><input type="radio" name="delivery" value="Retirada" checked> Retirada no local</label><label class="radio-line"><input type="radio" name="delivery" value="Entrega"> Entrega</label></fieldset>
+      <div id="addressWrap" hidden><label class="field-label" for="customerAddress">Endereço de entrega</label><textarea id="customerAddress" name="customerAddress" rows="2" maxlength="240" placeholder="Rua, número, bairro e referência"></textarea></div>
+      <label class="field-label" for="paymentMethod">Forma de pagamento</label><select id="paymentMethod" name="paymentMethod" required><option value="">Selecione</option><option>Pix</option><option>Dinheiro</option><option>Cartão</option></select>
+      <div id="changeWrap" hidden><label class="field-label" for="changeFor">Precisa de troco para quanto?</label><input id="changeFor" name="changeFor" inputmode="decimal" placeholder="Ex.: 50,00"></div>
+      <label class="field-label" for="orderNotes">Observações do pedido <span>(opcional)</span></label><textarea id="orderNotes" name="orderNotes" rows="2" maxlength="240" placeholder="Alguma informação importante?"></textarea>
+      <button class="button button-yellow checkout-submit" type="submit">Continuar no WhatsApp <span aria-hidden="true">↗</span></button>
+      <p class="form-hint">Você ainda poderá revisar e confirmar o envio no WhatsApp.</p>
+    </form>
+  </aside>
+</body>
+</html>
